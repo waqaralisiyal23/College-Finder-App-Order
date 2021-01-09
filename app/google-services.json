@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "355017667347",
+    "project_id": "collage-finder-app",
+    "storage_bucket": "collage-finder-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355017667347:android:3c499bd87ddee349bca0e6",
+        "android_client_info": {
+          "package_name": "com.codewithwaqar.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355017667347-g2rd4uonk0e8e7kqcu0t0jip9k9n6s60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codewithwaqar.myapplication",
+            "certificate_hash": "6a33cb64781b62ec078b5aea44281fe602f310cc"
+          }
+        },
+        {
+          "client_id": "355017667347-hk9anipd7cvs7bt27viq15ksekpkc6hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUK_nef3FikBF--qrF8TwizfqbXplAZAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355017667347-hk9anipd7cvs7bt27viq15ksekpkc6hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

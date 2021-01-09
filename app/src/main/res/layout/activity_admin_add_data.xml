@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddDataActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/admin_add_data_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/admin_add_data_toolbar"
+            app:titleTextColor="@android:color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/admin_add_data_sv"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/admin_add_data_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/add_data_image_view"
+                android:layout_marginBottom="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <EditText
+                android:id="@+id/add_data_name_field"
+                android:hint="Name"
+                android:background="@drawable/text_field"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/add_data_address_field"
+                android:hint="Address"
+                android:background="@drawable/text_field"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/add_data_url_field"
+                android:hint="Url"
+                android:background="@drawable/text_field"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/add_data_university_rbtn"
+                    android:text="University"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/add_data_college_rbtn"
+                    android:text="College"
+                    android:textSize="18sp"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Departments"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/admin_add_data_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="@drawable/text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/add_data_department_field"
+                    android:hint="Department Name"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/admin_add_data_department_add_tv"
+                    android:text="ADD"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_data_add_button"
+                android:layout_gravity="center_horizontal"
+                android:text="Add Institute"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_style"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
